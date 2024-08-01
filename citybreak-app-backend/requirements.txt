@@ -1,0 +1,8 @@
+Flask
+flask-session
+SQLAlchemy
+Flask-SQLAlchemy
+mysqlclient
+flask_RESTful
+marshmallow
+datetime
