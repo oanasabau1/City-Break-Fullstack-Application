@@ -2,10 +2,13 @@ from flask import Flask
 from flask_restful import Api
 from models import db
 from config import db_url
+from flask_cors import CORS
 from resources.events import Events_Get, Events_Post, Events_Put, Events_Delete
 from resources.weather import Weathers_Get, Weathers_Post, Weathers_Put, Weathers_Delete
 
+
 app = Flask('City_Break_App')
+CORS(app)  # Enable CORS for all routes
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 
 db.init_app(app)

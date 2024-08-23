@@ -6,3 +6,4 @@ mysqlclient
 flask_RESTful
 marshmallow
 datetime
+flask-cors
