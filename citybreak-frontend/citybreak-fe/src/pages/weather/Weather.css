@@ -1,0 +1,155 @@
+.weather-container {
+    padding: 20px;
+    background-color: #f4f4f4; 
+  }
+  
+  .weather-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .weather-container li {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-container h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333; 
+  }
+  
+  .weather-container p {
+    margin: 5px 0;
+    color: #666; 
+  }
+  
+  .weather-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  .weather-container button:hover {
+    opacity: 0.9;
+  }
+  
+  .weather-container button.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Shadows Into Light", cursive;
+    margin-right: 10px;
+  }
+  
+  .weather-container button.add-button {
+    background-color: hotpink;
+    margin-bottom: 10px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Shadows Into Light", cursive;
+    margin-right: 10px;
+  }
+  
+  .weather-container button.delete-button {
+    background-color: #f44336;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Shadows Into Light", cursive;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .edit-weather-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    box-sizing: border-box; 
+  }
+  
+  .edit-weather-form h2 {
+    margin-top: 0;
+    font-size: 1.75em;
+    color: #333;
+  }
+  
+  .edit-weather-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-weather-form label {
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .edit-weather-form input,
+  .edit-weather-form textarea {
+    margin-top: 5px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .edit-weather-form textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .edit-weather-form button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .edit-weather-form button[type="submit"] {
+    background-color: #4CAF50;
+    font-family: "Shadows Into Light", cursive;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-weather-form button[type="button"] {
+    background-color: #f44336;
+    font-family: "Shadows Into Light", cursive;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-weather-form button:hover {
+    opacity: 0.9;
+  }
+  
+  .edit-weather-form button[type="button"] {
+    margin-left: 10px;
+  }
+  

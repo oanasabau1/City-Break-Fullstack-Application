@@ -1,0 +1,154 @@
+.events-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.events-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events-container li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.events-container h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.events-container p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.events-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.events-container button:hover {
+  opacity: 0.9;
+}
+
+.events-container button.edit-button {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Shadows Into Light", cursive;
+  margin-right: 10px;
+}
+
+.events-container button.add-button {
+  background-color: hotpink;
+  margin-bottom: 10px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Shadows Into Light", cursive;
+  margin-right: 10px;
+}
+
+.events-container button.delete-button {
+  background-color: #f44336;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Shadows Into Light", cursive;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-event-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.edit-event-form h2 {
+  margin-top: 0;
+  font-size: 1.75em;
+  color: #333;
+}
+
+.edit-event-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-event-form label {
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #444;
+}
+
+.edit-event-form input,
+.edit-event-form textarea {
+  margin-top: 5px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.edit-event-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.edit-event-form button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.edit-event-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Shadows Into Light", cursive;
+}
+
+.edit-event-form button[type="button"] {
+  background-color: #f44336;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.edit-event-form button:hover {
+  opacity: 0.9;
+}
+
+.edit-event-form button[type="button"] {
+  margin-left: 10px;
+  font-family: "Shadows Into Light", cursive;
+}

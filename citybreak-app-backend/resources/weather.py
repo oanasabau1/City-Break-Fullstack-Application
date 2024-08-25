@@ -39,14 +39,18 @@ class Weathers_Post(Resource):
         return 'Weather added successfully!', 201
 
 
+import logging
+
 class Weathers_Put(Resource):
     def put(self):
         weather_id = request.args.get('id')
         weather = Weather.query.get_or_404(weather_id)
         data = request.json
+        logging.debug(f'Received data: {data}')
         try:
             validated_data = weather_schema.load(data)
         except ValidationError as err:
+            logging.error(f'Validation error: {err.messages}')
             return err.messages, 400
 
         weather.city = validated_data['city']
@@ -56,6 +60,7 @@ class Weathers_Put(Resource):
         weather.description = validated_data['description']
         db.session.commit()
         return 'Weather updated successfully!', 200
+
 
 
 class Weathers_Delete(Resource):

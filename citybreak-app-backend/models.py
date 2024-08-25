@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+
 class Event(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     city = db.Column(db.String(128))
@@ -16,6 +17,7 @@ class Event(db.Model):
 
     def to_dict(self):
         return {
+            'id': self.id,
             'city': self.city,
             'date': self.date.strftime('%Y-%m-%d') if self.date else datetime.today().strftime('%Y-%m-%d'),
             'title': self.title,
@@ -24,6 +26,7 @@ class Event(db.Model):
             'category': self.category,
             'price': self.price
         }
+
 
 class Weather(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -35,6 +38,7 @@ class Weather(db.Model):
 
     def to_dict(self):
         return {
+            'id': self.id,
             'city': self.city,
             'date': self.date.strftime('%Y-%m-%d') if self.date else datetime.today().strftime('%Y-%m-%d'),
             'temperature': self.temperature,

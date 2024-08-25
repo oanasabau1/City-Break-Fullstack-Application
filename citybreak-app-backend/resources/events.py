@@ -62,6 +62,7 @@ class Events_Put(Resource):
         return 'Event updated successfully!', 200
 
 
+
 class Events_Delete(Resource):
     def delete(self):
         event_id = request.args.get('id')
